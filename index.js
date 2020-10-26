@@ -9,42 +9,65 @@ const writeFileAsync = util.promisify(fs.writeFile);
 // array of questions for user
 function promptUser() {
     return inquirer.prompt([
-      {
+      //What is the title?
+      //Provide a description of your project
+      //Prompt for installation instructions
+      //Prompt usage information
+      //provide contribution guidelines
+      //Provide test instructions
+      //Choose a license from a list of licenses
+      //Provide github user name (creates a link)
+      //provide email address
+      //Links in the table of contents should work
+      
+        {
         type: "input",
-        name: "name",
-        message: "What is your name?"
+        name: "title",
+        message: "What is the title of your project?"
       },
       {
         type: "input",
-        name: "location",
-        message: "Where are you from?"
+        name: "description",
+        message: "Provide a description for your project."
       },
       {
         type: "input",
-        name: "hobby",
-        message: "What is your favorite hobby?"
+        name: "installation",
+        message: "Provide installation instructions for your users."
       },
       {
         type: "input",
-        name: "food",
-        message: "What is your favorite food?"
+        name: "usage",
+        message: "Describe the usage of this project."
       },
       {
         type: "input",
-        name: "github",
-        message: "Enter your GitHub Username"
+        name: "conGit",
+        message: "Provide your Github user name for users to contact you regarding contributions."
       },
       {
         type: "input",
-        name: "linkedin",
-        message: "Enter your LinkedIn URL."
+        name: "conMail",
+        message: "Provide your email for users to contact you regarding contributions."
+      },
+      {
+        type: "input",
+        name: "tests",
+        message: "Provide test instructions for your users."
       }
     ]);
   }
 
 // function to write README file
-function generateHTML(answers) {
-    return ``;
+function createMD(answers) {
+    return `
+    ${answers.title}
+    ${answers.description}
+    ${answers.installation}
+    ${answers.usage}
+    ${answers.conGit}, ${answers.conMail}
+    ${answers.tests}
+    `;
   }
 
 
@@ -54,9 +77,9 @@ async function init() {
     try {
       const answers = await promptUser();
   
-      const html = generateHTML(answers);
+      const md = createMD(answers);
   
-      await writeFileAsync("README.md", html);
+      await writeFileAsync("README.md", md);
   
       console.log("Successfully wrote to README.md");
     } catch(err) {

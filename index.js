@@ -58,26 +58,13 @@ function promptUser() {
     ]);
   }
 
-// function to write README file
-function createMD(answers) {
-    return `
-    ${answers.title}
-    ${answers.description}
-    ${answers.installation}
-    ${answers.usage}
-    ${answers.conGit}, ${answers.conMail}
-    ${answers.tests}
-    `;
-  }
-
-
 //Initializing the program
 async function init() {
     console.log("hi")
     try {
       const answers = await promptUser();
   
-      const md = createMD(answers);
+      const md = generateMarkdown(answers);
   
       await writeFileAsync("README.md", md);
   

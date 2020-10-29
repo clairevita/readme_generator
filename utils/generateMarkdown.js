@@ -22,9 +22,8 @@ function generateMarkdown(answers) {
   ${answers.tests}
   ## Questions
   Have a question? You can reach me at:
-  Github: ${answers.conGit} 
-  Email: ${answers.conMail}
-  
+  - github.com/${answers.conGit} 
+  - ${answers.conMail}
   `;
 }
 

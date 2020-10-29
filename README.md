@@ -20,5 +20,5 @@
   No tests are used in this code base. All inputs the user places into the command line should be directly reflected in the results of their README.md file.
   ## Questions
   Have a question? You can reach me at:
-  - [github.com/clairevita](github.com/clairevita) 
+  - [github.com/clairevita](https://github.com/clairevita) 
   - clairej.vita@gmail.com

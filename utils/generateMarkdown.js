@@ -22,7 +22,7 @@ function generateMarkdown(answers) {
   ${answers.tests}
   ## Questions
   Have a question? You can reach me at:
-  - [github.com/${answers.conGit}](github.com/${answer.conGit}) 
+  - [github.com/${answers.conGit}](https://github.com/${answer.conGit}) 
   - ${answers.conMail}
   `;
 }

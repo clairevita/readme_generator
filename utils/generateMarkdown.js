@@ -5,15 +5,18 @@ function generateMarkdown(answers) {
   # ${answers.title}
   ## Table of Contents
   ${answers.description}
-  ## 
+  ## Installation
   ${answers.installation}
-  ## 
+  ## Usage
   ${answers.usage}
-  ## 
+  ## Testing
   ${answers.tests}
-  ## 
-  ${answers.conGit}, ${answers.conMail}
+  ## Questions
+  Have a question? You can reach me at:
+  Github: ${answers.conGit} 
+  Email: ${answers.conMail}
   
   `;
 }
+
 module.exports = generateMarkdown;

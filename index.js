@@ -63,7 +63,7 @@ function promptUser() {
 
 //Initializing the program
 async function init() {
-    console.log("hi")
+    console.log("Welcome to README Generator! Answer the following prompts about your project to receive a custom formatted README.md file.")
     try {
       const answers = await promptUser();
       if (answers.license == "Other"){

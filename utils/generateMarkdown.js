@@ -10,7 +10,7 @@ function generateMarkdown(answers) {
   - [Contributions](#contributions)
   - [Testing](#testing)
   - [Questions](#questions)
-  ## About ${answers.title}
+  ## About
   ${answers.description}
   ## Installation
   ${answers.installation}

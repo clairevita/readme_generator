@@ -1,5 +1,5 @@
 
-  [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.porg/licensesMIT)
+  [![License: MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.porg/licenses/MIT)
   # README Generator
   ## Table of Contents
   - [About](#about)
@@ -22,4 +22,3 @@
   Have a question? You can reach me at:
   - github.com/clairevita 
   - clairej.vita@gmail.com
-  

@@ -1,12 +1,15 @@
+//This function seperates the location of markdown generation to a seperate file, located in the /utls folder.
 const generateMarkdown = require('./utils/generateMarkdown');
 
+//These packages are required for the app to function. Run an `npm install` before executing a node index.js in the command line.
 const fs = require("fs");
 const util = require("util");
 const inquirer = require("inquirer");
 
+//This variable enables us to swiftly create a file.
 const writeFileAsync = util.promisify(fs.writeFile);
 
-// array of questions for user
+// The promptUser function initiates the series of prompts that the user undergoes, and returns it to the asychronous function.
 function promptUser() {
     return inquirer.prompt([    
         {
@@ -71,17 +74,18 @@ async function init() {
         }]);
       }
 
-
+      //Here we are creating a formatted markdown file. For visual simplicity we export this to a separate Javascript file.
       const md = generateMarkdown(answers);
-      
+      //Here we call our writeFileAsync function, titling the file README.md and containing our formatted markdown.
       await writeFileAsync("README.md", md);
 
-  
+      //Once this is successfull we log to the user they were successfull.
       console.log("Successfully wrote to README.md");
     } catch(err) {
+      //If there was an error, we log it to the user.
       console.log(err);
     }
   }
-  
+  //Here we initiate our application.
   init();
   

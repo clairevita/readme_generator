@@ -1,4 +1,4 @@
-// function to generate markdown for README
+// This function generates our formatted markdown text.
 function generateMarkdown(answers) {
   return `
   [![License: ${answers.license}](https://img.shields.io/badge/license-${answers.license}-blue.svg)](https://opensource.porg/licenses${answers.license})
@@ -7,6 +7,7 @@ function generateMarkdown(answers) {
   - [About](#about)
   - [Installation](#installation)
   - [Usage](#usage)
+  - [Contributions](#contributions)
   - [Testing](#testing)
   - [Questions](#questions)
   ## About ${answers.title}

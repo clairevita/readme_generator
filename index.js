@@ -35,7 +35,12 @@ function promptUser() {
       {
         type: "input",
         name: "contributions",
-        message: "Describe the usage of this project."
+        message: "How should others make contributions to this project?"
+      },
+      {
+        type: "input",
+        name: "tests",
+        message: "Provide test instructions for your users."
       },
       {
         type: "input",
@@ -46,11 +51,6 @@ function promptUser() {
         type: "input",
         name: "conMail",
         message: "Provide your email for users to contact you regarding contributions."
-      },
-      {
-        type: "input",
-        name: "tests",
-        message: "Provide test instructions for your users."
       },
       {
         type: "list",

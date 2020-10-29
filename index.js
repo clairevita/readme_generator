@@ -31,6 +31,11 @@ function promptUser() {
       },
       {
         type: "input",
+        name: "contributions",
+        message: "Describe the usage of this project."
+      },
+      {
+        type: "input",
         name: "conGit",
         message: "Provide your Github user name for users to contact you regarding contributions."
       },

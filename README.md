@@ -10,10 +10,14 @@
   - [Questions](#questions)
   ## About
   This simple app uses the Inquirer npm package, to create a custom README markdown file according to their provided inputs. 
+  
+  [Watch the video demonstration here.](https://vimeo.com/473278420)
+  
   ## Installation
   To properly use the README Generator, they must first move to the directory they cloned the repository to in their command line. Here they must run an `npm install`, to install the necessary packages for the app to function. 
   ## Usage
   To initiate the app, the user enters `node index.js`, into the directory they cloned the app to. They will then be prompted with a series of questions about their project. After the user has responded with their answers, they are requested to select a license to protect their work. Once these steps have been completed, they will be notified that their formatted README has been created. Navigating to the folder where they located the README Generator app, they will find a markdown file with all of their inputs formatted appropriately.
+  ![](https://i.imgur.com/Jh5sf9q.png)
   ## Contributions
   As this is a project for the UPenn LPS Bootcamp, contributions will not be accepted. Any interested parties may reach me at clairej.vita@gmail.com.
   ## Testing
